@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.am.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.am.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_navigation_dashboard_to_mapsMModernas"
+            app:destination="@id/mapsMModernas" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_mapsMAntiguas"
+            app:destination="@id/mapsMAntiguas" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_mapsRutas"
+            app:destination="@id/mapsRutas" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_activityLista2"
+            app:destination="@id/activityLista" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.am.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.example.am.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" />
+    <activity
+        android:id="@+id/mapsMAntiguas"
+        android:name="com.example.am.MapsMAntiguas"
+        android:label="activity_maps_mantiguas"
+        tools:layout="@layout/activity_maps_mantiguas" />
+    <activity
+        android:id="@+id/mapsMModernas"
+        android:name="com.example.am.MapsMModernas"
+        android:label="activity_maps_mmodernas"
+        tools:layout="@layout/activity_maps_mmodernas" />
+    <fragment
+        android:id="@+id/mapasFragment"
+        android:name="com.example.am.MapasFragment"
+        android:label="fragment_mapas"
+        tools:layout="@layout/fragment_mapas" />
+    <activity
+        android:id="@+id/mapsRutas"
+        android:name="com.example.am.MapsRutas"
+        android:label="activity_maps_rutas"
+        tools:layout="@layout/activity_maps_rutas" />
+    <activity
+        android:id="@+id/activityLista"
+        android:name="com.example.am.ActivityLista"
+        android:label="activity_lista"
+        tools:layout="@layout/activity_lista" />
+    <activity
+        android:id="@+id/restaurantActivity"
+        android:name="com.example.am.RestaurantActivity"
+        android:label="activity_restaurant"
+        tools:layout="@layout/activity_restaurant" />
+</navigation>

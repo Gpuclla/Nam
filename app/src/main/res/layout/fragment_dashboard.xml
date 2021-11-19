@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/Theme.Actividades.NoActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ImageView
+        android:layout_width="242dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mapa" />
+
+
+    <LinearLayout
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnTurismo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="@color/naranja"
+            android:text="Lugares turisticos" />
+
+        <Button
+            android:id="@+id/btnMantiguas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="@color/naranja"
+            android:text="maravillas Antiguas" />
+
+        <Button
+            android:id="@+id/btnMmodernas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="@color/naranja"
+            android:text="Maravillas Modernas" />
+
+        <Button
+            android:id="@+id/btnExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="@color/naranja"
+            android:text="Rutas" />
+
+        <Button
+            android:id="@+id/btnRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bordes_redondos"
+            android:backgroundTint="@color/naranja"
+            android:text="Restaurantes" />
+    </LinearLayout>
+
+</LinearLayout>
